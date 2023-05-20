@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming_Dojo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="nav">
+            <div id="left-side">
+                <h1>Gaming<span>Dojo</span></h1>
+            </div>
+            <div class="right-side">
+                <select class="curr">
+                    <option value="Euro">Euro</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                <img src="images/cart-light.png" style="width:25px;height:25px; margin-right:10px;" alt="cart">
+                <span id="post" style="color:white">0</span>
+                <img src="images/search-light.png" style="width:25px;height:25px; margin-left:10px;" alt="search">
+            </div>
+        </div>
+        <div class="main">           
+            <h3 id="high">Highlights</h3>
+            <img src="images/chevron-left.png" alt="lchevron" style="width:100px;height:75px;">
+            <img src="images/stonepunk.png" alt="stonepunk" style="width:650px;height:250px;">                
+            <img src="images/chevron-right.png" alt="rchevron" style="width:100px;height:75px;">            
+            <!-- <div id="tb"><img src="images/tracking-bar.png" alt="trackingbar" style="width:450px;height:10px;"></div> -->
+        </div>
+        <div class="sub-main">
+            <div class="subm-1">
+                <img src="images/cafe-neko.png" alt="cafe-neko" style="width:300px;height:100px;">
+                <h3 id="pos">CafeNeko: Gold Edition</h3>
+                <img src="images/windows.png" alt="windows" style="width:23px;height:23px;">
+                <img src="images/apple.png" alt="apple" style="width:23px;height:23px;">
+                <div class="obj-a">                              
+                    <button class="item" style="width:80px;height:40px; font-size:1.2rem; font-weight:800;"><h4>-20%</h4></button>
+                    <img id="cp" src="images/euro_price_1489.png" alt="crossprice-a" style="width:45px;height:25px;">
+                    <p style = "font-weight:bold; font-size:1.2rem;"><img id="euro-a" src="images/euro.gif" alt="Euro">10.49</p>                     
+                    <button class="add" onclick="buy(0)" style="width:80px;height:40px;">Buy</button>
+                </div>
+            </div>
+            <div class="subm-2">
+                <img src="images/pixel-ninjas-2.png" alt="ninjas-2" style="width:300px;height:100px;">
+                <h3 id="pos">Pixel Ninjas 2</h3>
+                <img src="images/windows.png" alt="windows" style="width:23px;height:23px;">
+                <img src="images/apple.png" alt="apple" style="width:23px;height:23px;">
+                <div class="obj-b">                    
+                    <button class="item" style="width:80px;height:40px; font-size:1.2rem; font-weight:800;"><h4>-10%</h4></button>
+                    <img id="cp" src="images/euro_price_819.png" alt="crossprice-b" style="width:45px;height:25px;">
+                    <p style = "font-weight:bold; font-size:1.2rem;"><img id="euro-b" src="images/euro.gif" alt="Euro">7.39</p>                                             
+                    <button class="add" onclick="buy(1)" style="width:80px;height:40px;">Buy</button>
+                </div> 
+            </div>
+            <div class="subm-3">
+                <img src="images/stonepunk.png" alt="stonepunk" style="width:300px;height:100px;">
+                <h3 id="pos">Stonepunk 10000 BCE</h3>
+                <img src="images/windows.png" alt="windows" style="width:23px;height:23px;">
+                <img src="images/apple.png" alt="apple" style="width:23px;height:23px;">
+                <!-- <img src="images/linux.png" alt="linux" style="width:23px;height:23px;">  -->
+                <button id="lnx"onclick="alert('This game is supported on Linux')"><img src="images/linux.png" alt="Linux" style="width:23px;height:23px;"></button>        
+                <div class="obj-c">                 
+                    <button class="item" style="width:80px;height:40px; font-size:1.2rem; font-weight:800;"><h4>NEW</h4></button>
+                    <p style = "font-weight:bold; font-size:1.2rem;"><img id="euro-c" src="images/euro.gif" alt="Euro">19.99</p>
+                    <button class="add" onclick="buy(2)" style="width:80px;height:40px;font-weight:800;">Buy</button>
+                </div>
+            </div>
+        </div>      
+    </div>    
+</body>
+</html>
